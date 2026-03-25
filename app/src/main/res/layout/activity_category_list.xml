@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
 
+<!-- Layout chính dạng LinearLayout, sắp xếp các phần tử theo chiều dọc -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"      <!-- Chiều rộng full màn hình -->
+    android:layout_height="match_parent"     <!-- Chiều cao full màn hình -->
+    android:orientation="vertical"           <!-- Sắp xếp theo chiều dọc -->
+    android:padding="16dp">                  <!-- Padding xung quanh -->
+
+    <!-- TextView hiển thị tiêu đề "Categories" -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Categories"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:layout_width="wrap_content"  <!-- Rộng vừa đủ nội dung -->
+        android:layout_height="wrap_content" <!-- Cao vừa đủ nội dung -->
+        android:text="Categories"            <!-- Nội dung text -->
+        android:textSize="20sp"              <!-- Kích thước chữ -->
+        android:textStyle="bold"             <!-- In đậm -->
+        android:layout_marginBottom="16dp"/> <!-- Khoảng cách dưới -->
 
+    <!-- ListView dùng để hiển thị danh sách danh mục -->
     <ListView
-        android:id="@+id/lvCategories"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:id="@+id/lvCategories"       <!-- ID để xử lý trong code Java -->
+        android:layout_width="match_parent"  <!-- Rộng full -->
+        android:layout_height="match_parent"/> <!-- Cao chiếm phần còn lại -->
 
 </LinearLayout>
