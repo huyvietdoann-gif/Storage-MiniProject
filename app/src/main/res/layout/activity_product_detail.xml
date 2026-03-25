@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Layout chính dạng LinearLayout, sắp xếp các phần tử theo chiều dọc -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_width="match_parent"   <!-- Chiều rộng full màn hình -->
+    android:layout_height="match_parent"  <!-- Chiều cao full màn hình -->
+    android:orientation="vertical"        <!-- Sắp xếp theo chiều dọc -->
+    android:padding="16dp">               <!-- Khoảng cách viền trong -->
 
+    <!-- Hiển thị tên sản phẩm -->
     <TextView
-        android:id="@+id/tvProductName"
+        android:id="@+id/tvProductName"   <!-- ID để gọi trong code -->
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        android:textSize="24sp"           <!-- Kích thước chữ lớn -->
+        android:textStyle="bold"          <!-- In đậm -->
+        android:layout_marginBottom="8dp"/> <!-- Khoảng cách dưới -->
 
+    <!-- Hiển thị giá sản phẩm -->
     <TextView
         android:id="@+id/tvProductPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:textColor="#FF0000"
+        android:textColor="#FF0000"       <!-- Màu đỏ -->
         android:layout_marginBottom="16dp"/>
 
+    <!-- Hiển thị mô tả sản phẩm -->
     <TextView
         android:id="@+id/tvProductDescription"
         android:layout_width="match_parent"
@@ -28,6 +32,7 @@
         android:textSize="16sp"
         android:layout_marginBottom="32dp"/>
 
+    <!-- Nút thêm sản phẩm vào giỏ hàng -->
     <Button
         android:id="@+id/btnAddToCart"
         android:layout_width="match_parent"
